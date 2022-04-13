@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>Set</title>
+    <p id="set"></p>
+	<script>
+
+        const vehicle = new Set();
+
+        vehicle.add("TVS");
+        vehicle.add("Bullet");
+        vehicle.add("HeroHonda");
+
+        let text="";
+        for (let v of vehicle)
+        {
+            text +=v +"<BR/>";
+        }
+        document.getElementById("set").innerHTML=text;
+	</script>
+</head>
+</html>

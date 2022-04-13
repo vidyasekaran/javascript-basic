@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>Set</title>
+    <p id="first"></p>
+    <p id="sec"></p>
+	<script>
+
+        const vehicle = new Map();
+
+        vehicle.set("TVS",10000);
+        vehicle.set("Bullet",12300);
+        vehicle.set("HeroHonda",40400);
+
+        let text="";
+        for (let v of vehicle.entries())
+        {
+            text +=v +"<BR/>";
+        }
+        document.getElementById("first").innerHTML=text;
+
+    
+        let text1="";
+        vehicle.forEach (function(value,key){
+
+            text1 +=key +'=' +value +"<BR/>";
+        })
+        
+        document.getElementById("sec").innerHTML=text1;
+	</script>
+</head>
+</html>
