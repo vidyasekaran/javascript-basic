@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>Delay</title>
+ 
+	<script>
+		function handleOnChangeEvent(){
+			setTimeout(redirect(),3000000);
+		}
+	
+		function redirect(){
+			window.location="https://www.w3schools.com/";
+		}
+	</script>
+
+</head>
+<body>
+	<select onchange="handleOnChangeEvent()">
+		<option value="">Choose an url</option>
+		<option value="">W3Schools</option>
+		
+	</select>
+</body>
+</html>

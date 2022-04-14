@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>Set</title>
+ 
+	<script>
+	
+	function onfocusEvent(x){
+		x.style.color="red";
+		x.style.backgroundColor="yellow";
+	}
+
+	function onblurEvent(x){
+		x.style.color="yellow";
+		x.style.backgroundColor="blue";
+	}
+
+	</script>
+
+</head>
+<body>
+	<input type="text" onfocus="onfocusEvent(this)" onblur="onblurEvent(this)">Click me..</p>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Set</title>
+ 
+	<script>
+		 function addPara(){
+			var parent = document.getElementById("div");
+			
+			var child = document.createElement("div");
+			var text = document.createTextNode("Iam new here");
+			child.appendChild(text);
+			
+			
+			parent.appendChild(child);
+
+			
+		 }
+	
+	</script>
+
+</head>
+<body>
+	<div id="div">
+		<p id="first">All the power is within you!!!</p>
+		<p id="second">You can do anything and Everything !!!</p>
+	</div>
+	<input type="button" id="removeButton" value="add" onclick="addPara()"/>
+	
+</body>
+</html>

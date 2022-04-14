@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>Set</title>
+ 
+	<script>
+		 function buttonClick(){
+
+			document.getElementById("button1").addEventListener("click",dynamicButtonEvent);
+
+			function dynamicButtonEvent(){
+				alert("Dynamic Event Invoked");
+			}
+		 }
+	
+		 window.addEventListener("load",buttonClick);
+
+	</script>
+
+</head>
+<body>
+	<input type="button" id="button1" value="clickme"/>
+	
+</body>
+</html>

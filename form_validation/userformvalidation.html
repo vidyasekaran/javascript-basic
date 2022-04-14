@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>Set</title>
+ 
+	<script>
+
+	function validate(){
+
+		var email = document.myform.email.value;
+		var password = document.myform.password.value;
+
+		if(email==""){
+			alert("Email Mandatory");
+			document.myform.email.focus();
+			return false;
+		}else if (password==""){
+			alert("password Mandatory");
+			document.myform.password.focus();
+			return false;
+		}else{
+			alert("Validation Sucessful");
+			return true;
+		}
+
+	}
+	
+
+	</script>
+
+</head>
+<body>
+	<form name="myform" action="registration.jsp" onsubmit="validate()">
+	   Email:	 <input type="email" name="email"/></br>
+	   Password: <input type="password" name="password"/></br>
+		         <input type="submit" value="register"/></br>
+	</form>
+</body>
+</html>

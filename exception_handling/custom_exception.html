@@ -1,0 +1,44 @@
+<html>
+<head>
+	<title>Set</title>
+ 
+	<script>
+
+    function clean(){
+		document.getElementById("errorinfo").innerHTML="";
+		document.getElementById("finalinfo").innerHTML="";
+	}
+
+	function validateAge(){
+
+	try{
+
+		var age = document.getElementById("age").value;
+	
+		if(age ==''){
+			throw "Age Cannot be Empty";
+		}
+
+		if(parseInt(age)<18){
+			throw "Too young to vote"
+		}
+	}catch(obj){
+		document.getElementById("errorinfo").innerHTML=obj;
+	}finally{
+		document.getElementById("finalinfo").innerHTML="Inside finally";
+	}
+
+	
+
+	}
+
+	</script>
+
+</head>
+<body>
+	Age: <input type="text" id="age" onfocus="clean()"/>
+	<input type="button" onclick="validateAge()" value="vadlidate" />
+	<p id="errorinfo"></p>
+	<p id="finalinfo"></p>
+</body>
+</html>
